@@ -1,0 +1,65 @@
+{
+    "io": {
+        "enableDebug": true,
+        "batchId": "1",
+        "selectedSensorIds": [],
+        "outputDirPath": "results",
+        "videoDirPath": "metropolis-apps-data/videos/mtmc-app",
+        "jsonDataPath": "filtered_data.json", 
+        "protobufDataPath": "",
+        "groundTruthPath": "",
+        "groundTruthFrameIdOffset": 1,
+        "useFullBodyGroundTruth": false,
+        "use3dEvaluation": false,
+        "plotEvaluationGraphs": false
+    },
+    "preprocessing": {
+        "filterByRegionsOfInterest": false,
+        "timestampThreshMin": null,
+        "locationBboxBottomGapThresh": 0.02,
+        "locationConfidenceThresh": 0.5,
+        "locationBboxAreaThresh": 0.0008,
+        "locationBboxAspectRatioThresh": 0.6,
+        "embeddingBboxBottomGapThresh": 0.02,
+        "embeddingConfidenceThresh": 0.5,
+        "embeddingBboxAreaThresh": 0.0008,
+        "embeddingBboxAspectRatioThresh": 0.6,
+        "embeddingVisibilityThresh": 0.5,
+        "behaviorConfidenceThresh": 0.45,
+        "behaviorBboxAreaThresh": 0.0007,
+        "behaviorBboxAspectRatioThresh": 0.75,
+        "behaviorLengthThreshSec": 0.0,
+        "shortBehaviorFinishThreshSec": 1.0,
+        "behaviorNumLocationsMax": 9000,
+        "behaviorSplitThreshSec": 6,
+        "behaviorRetentionInStateSec": 600.0
+    },
+    "localization": {
+        "rectifyBboxByCalibration": false,
+        "peopleHeightMaxLengthSec": 600,
+        "peopleHeightNumSamplesMax": 1000,
+        "peopleHeightNumBatchFrames": 10000,
+        "peopleHeightEstimationRatio": 0.7,
+        "peopleHeightVisibilityThresh": 0.8,
+        "overwrittenPeopleHeightMeter": null
+    },
+    "clustering": {
+        "clusteringAlgo": "HDBSCAN",
+        "overwrittenNumClusters": null,
+        "agglomerativeClusteringDistThresh": 3.5,
+        "hdbscanMinClusterSize": 2,
+        "numReassignmentIterations": 4,
+        "reassignmentDistLooseThresh": 1.0,
+        "spatioTemporalDistLambda": 0.15,
+        "spatioTemporalDistType": "Hausdorff",
+        "suppressOverlappingBehaviors": false
+    },
+    "streaming": {
+        "kafkaBootstrapServers": "localhost:9092",
+        "kafkaProducerLingerMs": 0,
+        "kafkaMicroBatchIntervalSec": 60.0,
+        "kafkaRawConsumerPollTimeoutMs": 10000,
+        "kafkaNotificationConsumerPollTimeoutMs": 100,
+        "kafkaConsumerMaxRecordsPerPoll": 100000
+    }
+}

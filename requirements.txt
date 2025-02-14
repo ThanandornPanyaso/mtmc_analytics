@@ -1,0 +1,17 @@
+ffmpeg-python==0.2.0
+future==1.0.0
+kafka-python==2.0.2
+matplotlib==3.8.3
+moviepy==1.0.3
+numpy==1.26.4
+omegaconf==2.3.0
+opencv-python-headless==4.9.0.80
+ortools==9.8.3296
+pandas==2.2.1
+protobuf==4.25.3
+pydantic==2.6.3
+python-minifier==2.9.0
+scikit-learn==1.4.0
+scipy==1.12.0
+setuptools==69.1.1
+shapely==1.8.5

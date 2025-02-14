@@ -1,0 +1,29 @@
+{
+    "setup": {
+        "vizMode": "mtmc_objects",
+        "vizMtmcObjectsMode": "grid",
+        "enableMultiprocessing": false,
+        "ffmpegRequired": false
+    },
+    "io": {
+        "selectedSensorIds": [],
+        "selectedBehaviorIds": [],
+        "selectedGlobalIds": [],
+        "outputDirPath": "results",
+        "videoDirPath": "metropolis-apps-data/videos/mtmc-app",
+        "mapPath": "images/building=Nvidia-Bldg-K-Map.png",
+        "framesPath": "results/frames.json",
+        "behaviorsPath": "results/behaviors.json",
+        "mtmcObjectsPath": "results/mtmc_objects.json",
+        "groundTruthPath": ""
+    },
+    "plotting": {
+        "gridLayout": [2, 2],
+        "blankOutEmptyFrames": false,
+        "vizFilteredFrames": true,
+        "outputFrameHeight": 1080,
+        "tailLengthMax": 200,
+        "smoothingTailLengthThresh": 5,
+        "smoothingTailWindow": 30
+    }
+}

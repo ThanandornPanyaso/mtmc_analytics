@@ -1,0 +1,25 @@
+{
+    "input": {
+        "calibrationPath": "resources/calibration_retail_synthetic.json",
+        "mapPath": "images/building=Retail-Store-Map.png",
+        "rtlsLogPath": "results/mdx-rtls.log",
+        "videoDirPath": "metropolis-apps-data/videos/rtls-app",
+        "rawDataPath": "metropolis-apps-data/playback/mtmc_retail_synthetic_playback.txt"
+    },
+    "output": {
+        "outputVideoPath": "results/output_video.mp4",
+        "outputMapHeight": 1080,
+        "displaySensorViews": false,
+        "sensorViewsLayout": "radial",
+        "sensorViewDisplayMode": "rotational",
+        "sensorFovDisplayMode": "rotational",
+        "skippedBeginningTimeSec": 0.0,
+        "outputVideoDurationSec": 60.0,
+        "sensorSetup": 8,
+        "bufferLengthThreshSec": 3.0,
+        "trajectoryLengthThreshSec": 5.0,
+        "sensorViewStartTimeSec": 2.0,
+        "sensorViewDurationSec": 1.0,
+        "sensorViewGapSec": 0.1
+    }
+}
